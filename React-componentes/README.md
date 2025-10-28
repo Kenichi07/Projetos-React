@@ -1,6 +1,3 @@
-
-![Capa do repositório do curso, contendo no canto superior esquerdo o símbolo do github com o texto /alura-cursos, e no direito o logo da alura. Abaixo possuímos o título React: componentes e JSX com o subtítulo aprendendo a construir componentes reutilizáveis. Por fim, no canto inferior direito, há o logo da escola de front-end.](https://imgur.com/n21Gypa.png)
-
 # CodeConnect
 
 Rede social para pessoas desenvolvedoras chamada CodeConnect para o curso de React: componentes e JSX.
@@ -28,7 +25,7 @@ Você pode [acessar o código fonte do projeto inicial](https://github.com/Monic
 
 ## 🎨 Figma
 
-Você pode conferir o Figma da aplicação clicando [aqui](https://www.figma.com/file/SASyBm2k3IlqrO8qI1Otg1/CodeConnect-%7C-React%3A-Componentização-e-conceitos-básicos-(JSX)).
+Você pode conferir o Figma da aplicação clicando [aqui](<https://www.figma.com/file/SASyBm2k3IlqrO8qI1Otg1/CodeConnect-%7C-React%3A-Componentização-e-conceitos-básicos-(JSX)>).
 
 ## 🛠️ Abrir e rodar o projeto
 
@@ -38,4 +35,4 @@ Após baixar o projeto, você pode abrir com o Visual Studio Code. Para isso, na
 - Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
 - Por fim clique em OK
 
-Você pode abrir diretamente o arquivo index.html no seu navegador ou usar uma extensão como o ``Live Server``.
+Você pode abrir diretamente o arquivo index.html no seu navegador ou usar uma extensão como o `Live Server`.
