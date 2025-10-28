@@ -44,11 +44,25 @@
         return <h2 className="form__texto">{children}</h2>;
       }
 
-      function CampoDeDigitacao({ label, tipo, placeholder, id }) {
+      function CampoDeDigitacao({
+        label,
+        tipo,
+        placeholder,
+        id,
+        value,
+        setValor,
+      }) {
         return (
           <div className="form__campo-digitacao">
             <label for="email">{label}</label>
-            <input type={tipo} placeholder={placeholder} required id={id} />
+            <input
+              type={tipo}
+              placeholder={placeholder}
+              required
+              id={id}
+              value={value}
+              onChange={(evento) => setValor(evento.target.value)}
+            />
           </div>
         );
       }
@@ -62,6 +76,8 @@
       }
 
       function PaginaDeLogin() {
+        const [email, setEmail] = React.useState("");
+
         return (
           <div className="container-login">
             <img
@@ -76,6 +92,8 @@
                   label="E-mail ou usuário"
                   tipo="email"
                   placeholder="Digite o seu e-mail ou usuário"
+                  value={email}
+                  setValor={setEmail}
                   id="email"
                 />
                 <CampoDeDigitacao
