@@ -75,9 +75,27 @@
         );
       }
 
+      function Checkbox() {
+        return (
+          <>
+            <div className="form__campo-checkbox">
+              <input type="checkbox" id="lembrar" />
+              <label for="lembrar" />
+            </div>
+            <p className="form__opcoes-texto">Lembrar-me</p>
+          </>
+        );
+      }
+
       function PaginaDeLogin() {
         const [email, setEmail] = React.useState("");
         const [senha, setSenha] = React.useState("");
+
+        const handleSubmit = (event) => {
+          event.preventDefault();
+          console.log("email " + email);
+          console.log("senha " + senha);
+        };
 
         return (
           <div className="container-login">
@@ -86,7 +104,7 @@
               alt="uma mulher negra de cabelos crespos usando óculos e mexendo no computador, também há o logo da codeconnect"
             />
             <section>
-              <form action="">
+              <form action="" onSubmit={handleSubmit}>
                 <Titulo>Login</Titulo>
                 <Subtitulo>Boas-vindas! Faça seu login.</Subtitulo>
                 <CampoDeDigitacao
@@ -105,6 +123,7 @@
                   setValor={setSenha}
                   id="senha"
                 />
+                <Checkbox />
                 <Botao>Login</Botao>
               </form>
             </section>
