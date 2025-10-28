@@ -77,6 +77,7 @@
 
       function PaginaDeLogin() {
         const [email, setEmail] = React.useState("");
+        const [senha, setSenha] = React.useState("");
 
         return (
           <div className="container-login">
@@ -100,6 +101,8 @@
                   label="Senha"
                   tipo="password"
                   placeholder="Digite sua senha"
+                  value={senha}
+                  setValor={setSenha}
                   id="senha"
                 />
                 <Botao>Login</Botao>
