@@ -87,6 +87,29 @@
         );
       }
 
+      function Texto({ classe, children }) {
+        return <p className="{class}">{children}</p>;
+      }
+
+      function ItemRedesSociais({ link, nome }) {
+        return (
+          <li>
+            <a href={link}>
+              <img src={`./img/${nome}.svg`} alt={`ícone do ${nome}`} />
+              {nome}
+            </a>
+          </li>
+        );
+      }
+
+      function Link({ children }) {
+        return (
+          <a href="#" className="container-links__link">
+            {children}
+          </a>
+        );
+      }
+
       function PaginaDeLogin() {
         const [email, setEmail] = React.useState("");
         const [senha, setSenha] = React.useState("");
@@ -123,9 +146,21 @@
                   setValor={setSenha}
                   id="senha"
                 />
-                <Checkbox />
+                <fieldset className="form__opcoes">
+                  <Checkbox />
+                  <p>
+                    <a href="#" aria-label="Recuperar senha esquecida">
+                      Esqueci a senha
+                    </a>
+                  </p>
+                </fieldset>
                 <Botao>Login</Botao>
               </form>
+              <div className="container-links">
+                <Texto classe="container-links__titulo">
+                  ou entre com outras contas
+                </Texto>
+              </div>
             </section>
           </div>
         );
