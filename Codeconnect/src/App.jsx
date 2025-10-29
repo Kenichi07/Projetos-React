@@ -1,9 +1,13 @@
 import "./App.css";
 import Sidebar from "./componentes/Sidebar";
+import BarraDePesquisa from "./componentes/BarraDePesquisa";
 
 function App() {
   return (
-    <Sidebar />
+    <div>
+      <Sidebar />
+      <BarraDePesquisa />
+    </div>
   );
 }
 
