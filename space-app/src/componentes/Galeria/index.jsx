@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Titulo from "../Titulo";
 import Populares from "./Populares";
 import Tags from "./Tags";
-import Imagem from "./imagem";
+import Imagem from "./Imagem";
 
 const GaleriaContainer = styled.section`
   display: flex;
