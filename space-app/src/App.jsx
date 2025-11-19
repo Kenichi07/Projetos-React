@@ -39,7 +39,6 @@ const ConteudoGaleria = styled.section`
 `;
 
 const App = () => {
-  // eslint-disable-next-line no-unused-vars
   const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos);
   const [fotoSelecionada, setFotoSelecionada] = useState(null);
 
