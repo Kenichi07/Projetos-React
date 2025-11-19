@@ -39,10 +39,9 @@ const ConteudoGaleria = styled.section`
 `;
 
 const App = () => {
-  // eslint-disable-next-line no-unused-vars
   const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos);
-  // eslint-disable-next-line no-unused-vars
   const [fotoSelecionada, setFotoSelecionada] = useState(null);
+
   return (
     <FundoGradiente>
       <EstilosGlobais />
@@ -62,7 +61,10 @@ const App = () => {
           </ConteudoGaleria>
         </MainContainer>
       </AppContainer>
-      <ModalZoom foto={fotoSelecionada} />
+      <ModalZoom
+        foto={fotoSelecionada}
+        aoFechar={() => setFotoSelecionada(null)}
+      />
     </FundoGradiente>
   );
 };

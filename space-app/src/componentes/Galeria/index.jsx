@@ -1,15 +1,16 @@
-import styled from "styled-components";
+import { styled } from "styled-components";
 import Titulo from "../Titulo";
-import Populares from "./Populares";
 import Tags from "./Tags";
+import Populares from "./Populares";
 import Imagem from "./Imagem";
 
-const GaleriaContainer = styled.section`
+const GaleriaContainer = styled.div`
   display: flex;
+  gap: 24px;
 `;
 
 const SecaoFluida = styled.section`
-  flex: 1;
+  flex-grow: 1;
 `;
 
 const ImagensContainer = styled.section`
@@ -29,9 +30,9 @@ const Galeria = ({ fotos = [], aoFotoSelecionada }) => {
           <ImagensContainer>
             {fotos.map((foto) => (
               <Imagem
+                aoZoomSolicitado={aoFotoSelecionada}
                 key={foto.id}
                 foto={foto}
-                aoZoomSolicitado={aoFotoSelecionada}
               />
             ))}
           </ImagensContainer>
