@@ -75,5 +75,7 @@ export const useCarrinhoContext = () => {
     removerProduto,
     setCarrinho,
     removerProdutoCarrinho,
+    valorTotal,
+    quantidade,
   };
 };
